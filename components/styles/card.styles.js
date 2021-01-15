@@ -28,7 +28,7 @@ position:relative;
       }
 
     :hover h3{
-        color: #222;
+        
     }
       
 
