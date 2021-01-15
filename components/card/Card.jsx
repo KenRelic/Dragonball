@@ -6,7 +6,7 @@ const Card  = (props) =>{
         <Image src={props.image} width={450} height={600} />
         <div className="cardTitle">
              <h3>{props.name}</h3>
-             <p><div className="statusColor"></div> {props.status}</p>
+             <p><span className={props.status=== 'Alive'? 'alive' : 'dead'}></span> {props.status}</p>
           </div>
      </>
   )

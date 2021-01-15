@@ -55,7 +55,7 @@ const characters = [
     "race": "Unknown",
     "gender": "Male",
     "currentPlanet": "In Space",
-    "status": "Alive",
+    "status": "Dead",
     "image": "/frieza.jpg",
     "level": "Golden Frieza",
     "group": "Leader of Frieza Force"
@@ -84,7 +84,7 @@ function Home(props) {
             <StyledGrid>
               {
                 props.profile.map((character) => (
-                <StyledCard>
+                <StyledCard key={character.id}>
                   <Card
                     key={character.id}
                     name={character.name}

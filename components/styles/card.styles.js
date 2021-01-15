@@ -18,8 +18,8 @@ position:relative;
     :hover,
     :focus ,
     :active {
-            color: #111;
-            background-color: #099e7b;
+            // color: #111;
+            // background-color: #099e7b;
     }
     h3 {
         margin: 0 0 1rem 0;
@@ -44,15 +44,35 @@ position:relative;
 
       .cardTitle{
         positon:absolute;
-        bottom:0;
+        // bottom:100px;
+        margin-bottom:-100px;
         left:0;
         width:100%;
         hieght: 80px;
         padding: 1rem;
         text-align:center;
         background: linear-gradient(0deg, #000217, transparent);
+        transition: margin-bottom 0.3s ease;
       }
 
+      :hover .cardTitle{
+        margin-bottom:0;
+      }
+
+      .cardTitle p > span{
+        height:5px;
+        padding: 5px 8px;
+        margin-right:5px;
+        vertical-align:middle;
+        border-radius:50%;
+        font-size: 5px;
+      }
+      .alive{
+        background-color: green;
+      }
+      .dead{
+        background-color: red;
+      }
       @media (min-width: 768px) {
           width: 85%;
          
